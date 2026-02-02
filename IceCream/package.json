@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
     "express": "^5.2.1",
+    "formik": "^2.4.9",
     "mongoose": "^9.1.5",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
