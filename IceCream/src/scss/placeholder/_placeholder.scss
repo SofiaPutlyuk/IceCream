@@ -1,0 +1,21 @@
+@mixin textGrey {
+    font-family:"Archivo";
+    font-weight:400;
+    font-size:20px;
+    color:$greyLightColor;
+}
+@mixin btnPinkStyle {
+    background-color: $pinkColor;
+    box-shadow: 0px 3px 22px 3px $boxShadowBtnColor;
+}
+@mixin textCard {
+    font-family: "Archivo";
+    font-weight:700;
+    font-size:20px;
+    color:$blackColor;
+}
+@mixin textCurly {
+    font-family: "Berkshire Swash";
+    font-weight: 400;
+    font-size:60px ;
+}
