@@ -1,10 +1,10 @@
 import './App.css'
-// import Header from './components/LayOut/Header/Header'
+import Header from './components/LayOut/Header/Header'
 function App() {
 
   return (
     <>
-    {/* <Header/> */}
+    <Header/>
     </>
   )
 }
