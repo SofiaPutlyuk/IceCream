@@ -31,9 +31,9 @@
         &_rightContainer{
             display: flex;
             align-items: center;
+            justify-content: space-between;
             width: 882px;
             height: 52px;
-            background: rebeccapurple;
             &_navigatePanel{
                 display: flex;
                 justify-content: space-between;
@@ -51,13 +51,29 @@
                         font-family:"Archivo";
                         font-weight: normal;
                         color: $blackColor;
-    
+                        cursor: pointer;
                     }
                     // &_item:{
                     //     color: $pinkColor;
                         
                     // }
                 }
+            }
+            &_ContactUsButton{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 168px;
+                height: 52px;
+                background: $pinkColor;
+                border: none;
+                border-radius: 30px;
+                box-shadow: 0 3px 22px 3px rgba(248, 61, 142, 0.31);
+                cursor: pointer;
+                font-family:"Archivo" ;
+                font-weight: bold;
+                font-size: 16px;
+                column-gap: 20px;
             }
         }
     }
