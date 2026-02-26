@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "../../../../public/assets/logo.svg";
 import style from './_header.module.scss'
 const Header = () => {
   return (
