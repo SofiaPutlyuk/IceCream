@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "../../../../public/assets/logo.svg";
 import row from './rowNav.svg'
 import search from './search.svg'
 import basket from './Basket.svg'
