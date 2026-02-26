@@ -1,12 +1,10 @@
-import logo from "./logo.svg";
-import Logo from "./logo.svg";
+import logo from "../../../../public/assets/logo.svg";
 import style from './_header.module.scss'
 const Header = () => {
   return (
     <header className={style.header}>
       <div className={style.header_Container}>
         <div className={style.header_Container_LogoContainer}>
-          <Logo/>
           <img className={style.header_Container_LogoContainer_logo} src={logo} alt="Logo" />
           <h2 className={style.header_Container_LogoContainer_Title}> <span className={style.spanHeader}>Icy</span>Tales</h2>
         </div>
