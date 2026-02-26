@@ -24,7 +24,6 @@
                 font-family: "Berkshire Swash", serif;
                 font-weight: 400;
                 font-size: 32px;
-                
                 color: $purpleColor;
             }
         }
@@ -53,10 +52,9 @@
                         color: $blackColor;
                         cursor: pointer;
                     }
-                    // &_item:{
-                    //     color: $pinkColor;
-                        
-                    // }
+                    &_pagesContainer{
+                        width: 50px;
+                    }
                 }
             }
             &_ContactUsButton{
@@ -75,9 +73,100 @@
                 font-size: 16px;
                 column-gap: 20px;
             }
+            &_basketContainer{
+                width: 20px;
+                height: 23px;
+                display: flex;
+                &_icon{
+                    position: absolute;
+                }
+                &_counter{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 14px;
+                    left: 10px;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: $purpleColor;
+                    font-family:"Archivo" ;
+                    font-weight: 400;
+                    font-size: 10px;
+                }
+            }
+            &_useIcon{
+                width: 25px;
+                height: 25px;
+            }
+            &_userContainer{
+                background: none;
+                border: none;
+            }
         }
     }
 }
 .spanHeader{
     color: $pinkColor;
+}
+.homeLink{
+    position: relative;
+}
+.homeList{
+    position: absolute;
+    scroll-behavior:smooth ;
+    width: 212px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    top: 113px;
+    padding: 0;
+    &_Item{
+        display: flex;
+        align-items: center;
+        height: 36px;
+        max-width: 100%;
+        cursor: pointer;
+        padding-left: 20px;
+        font-family:"Archivo" ;
+        font-weight: 400;
+        font-size: 16px;
+        color: $blackColor;
+        &:hover{
+            background: $pinkColor;
+            color: $whiteColor;
+        }
+    }
+}
+.pagesLink{
+    position: absolute;
+}
+.pagesList{
+    position: relative;
+    height: 72px;
+    width: 212px;
+    list-style: none;
+    padding: 0;
+    top: 83px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    &_Item{
+        display: flex;
+        align-items: center;
+        height: 36px;
+        max-width: 100%;
+        cursor: pointer;
+        padding-left: 20px;
+        font-family:"Archivo" ;
+        font-weight: 400;
+        font-size: 16px;
+        color: $blackColor;
+        &:hover{
+            background: $pinkColor;
+            color: $whiteColor;
+        }
+    }
 }
