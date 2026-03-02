@@ -1,10 +1,12 @@
 import './App.css'
-import Header from './components/LayOut/Header/Header'
+
+import LayOut from './components/LayOut/LayOut'
 function App() {
 
   return (
     <>
-    <Header/>
+      <LayOut>
+      </LayOut>
     </>
   )
 }
