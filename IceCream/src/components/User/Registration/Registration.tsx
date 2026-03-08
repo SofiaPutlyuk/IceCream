@@ -1,4 +1,4 @@
-import style from "./_login.module.scss";
+import style from "./_registration.module.scss";
 import { IoMdClose } from "react-icons/io";
 import { Formik, Field, Form } from "formik";
 import { ToastContainer, toast } from 'react-toastify';

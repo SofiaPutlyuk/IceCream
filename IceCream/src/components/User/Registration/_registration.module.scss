@@ -1,0 +1,70 @@
+
+@import "../../../scss/variables/utils/variables";
+
+.backdrop{
+    position: absolute;
+    display: flex;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(74, 74, 74, 0.799);
+    &_formContainer{
+        margin: auto auto;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 600px;
+        padding-bottom: 40px;
+        background: white;
+        border-radius: 15px;
+        align-items: center;
+        &_form{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            row-gap: 45px;
+            width: 400px;
+            &_input{
+                height: 40px;
+                border-radius: 40px;
+                padding-left: 15px;
+                background: none;
+                border-color: $pinkColor;
+                color: $blackColor;
+            }
+            &_button{
+                height: 40px;
+                border-radius: 50px;
+                background: $pinkColor;
+                color: $whiteColor;
+                border: none;
+                cursor: pointer;
+                font-family:"Archivo" ;
+                font-weight: bold;
+                font-size: 30px;
+            }
+        }
+        &_title{
+            color: $blackColor;
+            font-family: "Berkshire Swash", serif;
+            font-weight: 700;
+            font-size: 32px;
+        }
+        &_subTitle{
+            color: $blackColor;
+            &_link{
+                text-decoration: none;
+                color: $pinkColor;
+            }
+        }
+    }
+    &_closeBtn{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        align-items: center;
+        background:none;
+        border: none;
+        cursor: pointer;
+    }
+}
