@@ -74,7 +74,6 @@ const Registration = () => {
               </Form>
             )}
           </Formik>
-          <p className={style.backdrop_formContainer_subTitle}>Don’t have an account? <Link to="/register" className={style.backdrop_formContainer_subTitle_link}>Create account</Link> </p> 
         </div>
         <button className={style.backdrop_closeBtn} onClick={() => closeModal(-1)}>
           <IoMdClose />
