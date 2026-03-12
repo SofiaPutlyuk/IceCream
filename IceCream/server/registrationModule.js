@@ -1,5 +1,4 @@
-import mongoose from "mongoose"
-
+import mongoose from 'mongoose'
 const registrationSchema = new mongoose.Schema({
     firstName:{type:String,required:true},
     lastName:{type:String,required:true},
@@ -7,6 +6,6 @@ const registrationSchema = new mongoose.Schema({
     password:{type:String,required:true},
     confirmPassword:{type:String,required:true}
 })
-const registration = mongoose.model("Registration",registrationSchema)
+const Registration = mongoose.model("Registration",registrationSchema)
 
-module.exports = registration
+export default Registration

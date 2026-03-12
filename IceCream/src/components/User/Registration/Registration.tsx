@@ -70,7 +70,7 @@ const Registration = () => {
                 
                 <Field name="confirmPassword" type="password" placeholder="Confirm password" className={style.backdrop_formContainer_form_input}/>                
 
-                <button type="submit" className={style.backdrop_formContainer_form_button}>Submit</button>
+                <button type="submit" className={style.backdrop_formContainer_form_button}>Create account</button>
               </Form>
             )}
           </Formik>
