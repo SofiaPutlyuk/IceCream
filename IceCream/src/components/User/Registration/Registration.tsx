@@ -3,12 +3,12 @@ import { IoMdClose } from "react-icons/io";
 import { Formik, Field, Form } from "formik";
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-
+import { useDispatch } from "react-redux";
 const Registration = () => {
     const notify = () => toast.error("Please fill in all the fields in the form.")
     const confirm = () => toast.error("Passwords do not match.")
     const closeModal = useNavigate()
+    const dispatch = useDispatch()
     type FormValues = {
         firstName: string;
         lastName: string;

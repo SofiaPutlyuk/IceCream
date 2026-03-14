@@ -2,7 +2,6 @@ import Registration from "./registrationModule.js"
 
 export const createUser = async (req,res) => {
     try {
-        console.log(req.body)
         const seaechUser = await Registration.findOne({
             $or: [
                 { email: req.body.email }
