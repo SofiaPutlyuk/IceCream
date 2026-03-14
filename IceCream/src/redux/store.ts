@@ -1,7 +1,10 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-const rootReducer = combineReducers({})
+const rootReducer = combineReducers({
+    temp: (state = {}) => state
+})
+
 const persistConfig = {
     key: "root",
     storage,
