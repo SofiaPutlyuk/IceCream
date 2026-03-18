@@ -1,8 +1,8 @@
 import express from "express"
-import Login from "./loginModule.js";
+import {loginUser} from "./loginController.js";
 
 const loginRouter = express.Router()
 
-loginRouter.post("/",Login)
+loginRouter.post("/", loginUser)
 
 export default loginRouter

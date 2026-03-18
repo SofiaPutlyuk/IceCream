@@ -1,4 +1,4 @@
-import Login from "./loginModule"
+import Login from "./loginModule.js"
 export const loginUser = async (req,res) => {
     try {
         const user = await Login.findOne({ email: req.body.email });
