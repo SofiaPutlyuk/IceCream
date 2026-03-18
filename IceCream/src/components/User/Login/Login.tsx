@@ -4,6 +4,8 @@ import { Formik, Field, Form } from "formik";
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { useAppDispatch } from "../../../redux/hooks/hooks";
+import loginThunk from "../../../redux/thunks/loginThunk";
 const Login = () => {
   type FormValues = {
     firstName: string;
@@ -15,7 +17,8 @@ const Login = () => {
   type ErrorsType = Partial<FormValues>;
   const notify = () => toast.error("Please fill in all the fields in the form.")
   const confirm = () => toast.error("Passwords do not match.")
-  const closeModal = useNavigate()
+  const closeModal = useNavigate() 
+  const dispatch = useAppDispatch()
   return (
     <>
       <div className={style.backdrop}>
@@ -53,8 +56,10 @@ const Login = () => {
               return errors; 
             }}
             validateOnChange={false}
+            validateOnBlur={false}
             onSubmit={(values) => {
               console.log(values);
+              dispatch(loginThunk(values))
             }}
           >
             {() => (
@@ -75,7 +80,7 @@ const Login = () => {
           </Formik>
           <p className={style.backdrop_formContainer_subTitle}>Don’t have an account? <Link to="/register" className={style.backdrop_formContainer_subTitle_link}>Create account</Link> </p> 
         </div>
-        <button className={style.backdrop_closeBtn} onClick={() => closeModal(-1)}>
+        <button className={style.backdrop_closeBtn} onClick={() => closeModal("/")}>
           <IoMdClose />
         </button>
         <ToastContainer position="top-left"/>

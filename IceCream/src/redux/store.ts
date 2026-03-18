@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { persistStore, persistReducer } from "redux-persist";
-import storage from "redux-persist/lib/storage";
+
+import storage from 'redux-persist/es/storage';
+import {persistStore,persistReducer,FLUSH,REHYDRATE,PAUSE,PERSIST,PURGE,REGISTER} from "redux-persist"
 const rootReducer = combineReducers({
     temp: (state = {}) => state
 })
@@ -12,7 +13,13 @@ const rootReducer = combineReducers({
 export type RootState = ReturnType<typeof rootReducer>
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 const store = configureStore({
-    reducer: persistedReducer
+    reducer: persistedReducer,
+    middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware({
+          serializableCheck: {
+            ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+          },
+        }),
 })
 export type AppDispatch = typeof store.dispatch
 export const persistor = persistStore(store)
