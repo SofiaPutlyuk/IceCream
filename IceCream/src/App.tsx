@@ -1,6 +1,7 @@
 import './App.css'
 
 import LayOut from './components/LayOut/LayOut'
+import Login from './components/User/Login/Login'
 import Registration from './components/User/Registration/Registration'
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <>
       <LayOut>
       </LayOut>
-      <Registration/>
+      <Login/>
     </>
   )
 }

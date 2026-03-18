@@ -3,12 +3,14 @@ import { IoMdClose } from "react-icons/io";
 import { Formik, Field, Form } from "formik";
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-
+import { useAppDispatch } from "../../../redux/hooks/hooks";
+import registrationThunk from '../../../redux/thunks/registrationThunk'
 const Registration = () => {
     const notify = () => toast.error("Please fill in all the fields in the form.")
     const confirm = () => toast.error("Passwords do not match.")
     const closeModal = useNavigate()
+    const dispatch = useAppDispatch()
+    const redirect = useNavigate()
     type FormValues = {
         firstName: string;
         lastName: string;
@@ -54,8 +56,10 @@ const Registration = () => {
               return errors; 
             }}
             validateOnChange={false}
+            validateOnBlur = {false}
             onSubmit={(values) => {
-              console.log(values);
+              dispatch(registrationThunk(values))
+              redirect("/login")
             }}
           >
             {() => (
@@ -75,7 +79,7 @@ const Registration = () => {
             )}
           </Formik>
         </div>
-        <button className={style.backdrop_closeBtn} onClick={() => closeModal(-1)}>
+        <button className={style.backdrop_closeBtn} onClick={() => closeModal("/")}>
           <IoMdClose />
         </button>
         <ToastContainer position="top-left"/>
