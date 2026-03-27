@@ -1,4 +1,9 @@
+import Login from "../../User/Login/Login";
 const HomePage = () => {
-    return <></>
+    return (
+        <>
+        <Login />
+        </>
+    )
 }
 export default HomePage;
