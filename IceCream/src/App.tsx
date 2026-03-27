@@ -21,7 +21,6 @@ import BlogPage from './components/pages/BlogPage/BlogPage'
 import MissionPage from './components/pages/MissionPage/MissionPage'
 function App() {
   return (
-    <HashRouter>
       <Routes>
         <Route path="/" element={<LayOut />} >
           <Route index element={<HomePage />} />
@@ -45,7 +44,6 @@ function App() {
           <Route path="thank" element={<ThankYouPage />} />
         </Route>
       </Routes>
-    </HashRouter>
   )
 }
 
