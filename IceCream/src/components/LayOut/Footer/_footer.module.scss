@@ -1,0 +1,217 @@
+@import "../../../scss/variables/utils/variables";
+@import "../../../scss/placeholder/placeholder";
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+.footer{
+    width: 100%;
+    height: 386px;
+    background: $purpleColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &_container{
+        height: 337px;
+        width: 1140px;
+        display:flex;
+        align-items: center;
+        padding-left: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        justify-content: space-between;
+        &_logoContainer{
+            display: flex;
+            align-items: center;
+            &_title{
+                font-family: "Berkshire Swash",serif;
+                font-size: 32px;
+                font-weight: 400;
+            }
+            &_logoImg{
+                height: 70px;
+                width: 54px;
+            }
+        }
+        &_navigationBlock{
+            width: 178px;
+            height: 147px;
+            display: flex;
+            flex-direction: column;
+            align-items: space-between;
+            text-align: start;
+            &_title{
+                font-family: "Archivo",serif;
+                font-size: 22px;
+                font-weight: 600;
+            }
+            &_list{
+                width: 155px;
+                padding-left: 22px;
+                height: 83px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin: 0;
+                justify-content: space-between;
+                &_item{
+                    color: white;
+                    font-size: 14px;
+                    text-align: start;
+                    padding-left: 0px;
+
+                    &::marker {
+                        color: red;
+                        font-size: 0.8em;
+                    }
+                    &_link{
+                        text-decoration: none;
+                        color: #CFB6E2;
+                    }
+                }
+            }
+        }
+        &_locationBlock{
+            width: 294px;
+            height: 136px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &_adressBlock{
+                width: 294px;
+                height: 66px;
+                display: flex;
+                justify-content: space-between;
+                &_iconContainer{
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 50%;
+                    background: #ffffff10;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+
+                &_textContainer{
+                    width: 226px;
+                    height: 64px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    &_title{
+                        font-family:"Archivo";
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-top: 0;
+                        margin-bottom:0;
+                    }
+                    &_subTitle{
+                        font-family:"Archivo", sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #cfb6e2;
+                        height: 39px;
+                        line-height: 143%;
+                        margin-top: 0;
+                        margin-bottom:0;
+                        text-align: start;
+                    }
+                }
+            }
+            &_emailBlock{
+                width: 100%;
+                height: 46px;
+                display: flex;
+                justify-content: space-between;
+                &_iconContainer{
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 50%;
+                    background: #ffffff10;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &_textContainer{
+                    width: 230px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    &_title{
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-family: "Archivo", sans-serif;
+                        font-weight: 600;
+                        font-size: 16px;
+
+                    }
+                    &_subTitle{
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-family: "Archivo", sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #cfb6e2;
+                    }
+                }
+            }
+        }
+        &_contactsBlock{
+            width: 235px;
+            height: 119px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &_phoneContainer{
+                width: 100%;
+                height: 46px;
+                display: flex;
+                &_phoneIconContainer{
+                    width: 31px;
+                    height: 31px;
+                }
+                &_textContainer{
+                    width: 187px;
+                    height: 46px;
+                    &_number{
+                        font-family: "Archivo", sans-serif;
+                        font-weight: 700;
+                        font-size: 20px;
+                        margin: 0;
+                    }
+                    &_subTitle{
+                        font-family: "Archivo", sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        color: #cfb6e2;
+                    }
+                }
+            }
+            &_socialBlock{
+                width: 169px;
+                height: 46px;
+                display: flex;
+                justify-content: space-between;
+                &_iconContainer{
+                    width: 46px;
+                    height: 46px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &_copyright{
+        font-family: "Archivo", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: #cfb6e2;
+    }
+}
+.spanFooter{
+    color: $pinkColor;
+}

@@ -19,6 +19,8 @@ import ShoppingCart from './components/pages/ShoppingCart/ShoppingCart'
 import JourneyPage from './components/pages/JourneyPage/JourneyPage'
 import BlogPage from './components/pages/BlogPage/BlogPage'
 import MissionPage from './components/pages/MissionPage/MissionPage'
+import Login from './components/User/Login/Login'
+import Registration from './components/User/Registration/Registration'
 function App() {
   return (
       <Routes>
@@ -42,6 +44,8 @@ function App() {
           <Route path="mission" element={<MissionPage />} />
           <Route path="terms" element={<TermsAndContidionPage />} />
           <Route path="thank" element={<ThankYouPage />} />
+          <Route path='login' element={<Login/>}/>
+          <Route path='register' element={<Registration/> }/>
         </Route>
       </Routes>
   )
