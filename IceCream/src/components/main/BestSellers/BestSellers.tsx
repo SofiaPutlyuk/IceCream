@@ -1,4 +1,9 @@
+import styles from "./_best-sellers.scss"
 const BestSellers = () => {
-    return <></>
+    return(
+        <div>
+
+        </div>
+    )
 }
 export default BestSellers;

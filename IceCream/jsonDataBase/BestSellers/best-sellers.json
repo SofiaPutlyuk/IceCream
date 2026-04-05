@@ -1,0 +1,86 @@
+[
+    {
+        "id":1,
+        "name":"Chocolate Chip Cookie Cone",
+        "description":"Chocolate chip cookie dough ice cream in a cone.",
+        "photo":"/images/chocolate.png",
+        "price":"$4.49"
+    }, 
+    {
+        "id":2,
+        "name":"Rocky Road Sundae",
+        "description":"Marshmallow and nutty rocky road ice cream",
+        "photo":"/images/rocky.png",
+        "price":"$5.69"
+    }, 
+    {
+        "id":3,
+        "name":"Peach Melba Sundae",
+        "description":"Peach ice cream topped with raspberry sauce",
+        "photo":"/images/melba.png",
+        "price":"$5.39"
+    }, 
+    {
+        "id":4,
+        "name":"Strawberry Sundae",
+        "description":"Strawberry ice cream with fresh strawberries", 
+        "photo":"/images/strawberry.png",
+        "price":"$5.99"
+    },
+    {
+        "id":5,
+        "name":"Dairy Free Classic",
+        "description":"Vegan",
+        "photo":"/images/vegan/classic.png",
+        "price":"$6.49"
+    },
+    {
+        "id":6,
+        "name":"Dairy Free Almond",
+        "description":"Vegan almond",
+        "photo":"/images/vegan/almond.png",
+        "price":"$4.89"
+    },
+    {
+        "id":7,
+        "name":"Chocolate Fudge",
+        "description":"Vegan fudge",
+        "photo":"/images/vegan/fudge.png",
+        "price":"$5.99"
+    },
+    {
+        "id":8,
+        "name":"Coconut Milk Chocolate Chip",
+        "description":"Vegan coconut",
+        "photo":"/images/vegan/coconut.png",
+        "price":"$5.99"
+    }, 
+    {
+        "id":9,
+        "name":"Strawberry Balsamic Gelato",
+        "description":"Artist balsamic",
+        "photo":"/images/artist/strawberry-balsamic.png",
+        "price":"$6.49"
+    }, 
+    {
+        "id":10,
+        "name":"Chocolate Hazelnut Gelato",
+        "description":"Artist hazelnut",
+        "photo":"/images/artist/chocolate-hazelnut.png",
+        "price":"$6.79"
+    }, 
+    {
+        "id":11,
+        "name":"Tiramisu Gelato",
+        "description":"Artist tiramisu",
+        "photo":"/images/artist/tiramisu.png",
+        "price":"$6.59"
+    },
+    {
+        "id":12,
+        "name":"Classic Pistachio Gelato",
+        "description":"Artist pistachio",
+        "photo":"/images/artist/classic-pistachio.png",
+        "price":"$6.29"
+    }
+]
