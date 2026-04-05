@@ -1,0 +1,5 @@
+const BestSellersList = () => {
+    return(
+        <></>
+    )
+}
