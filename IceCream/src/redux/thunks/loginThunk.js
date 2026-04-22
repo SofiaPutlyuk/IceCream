@@ -9,11 +9,11 @@ const loginThunk = createAsyncThunk(
       try {
         const res = await loginFetch(values);
   
-        console.log("RES:", res); // 👈
+        console.log("RES:", res);
   
         return res;
       } catch (err) {
-        console.log("ERROR:", err); // 👈
+        console.log("ERROR:", err); 
         return rejectWithValue(err.message);
       }
     }
