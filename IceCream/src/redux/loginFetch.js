@@ -1,11 +1,10 @@
 import axios from "axios";
-
-const loginFetch  = ({firstName,lastName,email,password,confirmPassword}) => {
-
+const loginFetch  = async ({name,email,password,}) => {
     try {
-        const response = axios.post("http://localhost:5000/login",{firstName,lastName,email,password,confirmPassword}).then(res => console.log(res))
+        const response = await axios.post("http://localhost:5000/login",{name,email,password})
+        return response.data;
     } catch (error) {
-        
+        throw error;
     }
 }
 export default loginFetch
