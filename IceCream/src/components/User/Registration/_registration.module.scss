@@ -13,7 +13,7 @@
         display: flex;
         flex-direction: column;
         width: 500px;
-        height: 600px;
+        height: 650px;
         padding-bottom: 40px;
         background: white;
         border-radius: 15px;
@@ -33,7 +33,7 @@
                 color: $blackColor;
             }
             &_button{
-                height: 40px;
+                height: 55px;
                 border-radius: 50px;
                 background: $pinkColor;
                 color: $whiteColor;
@@ -66,5 +66,8 @@
         background:none;
         border: none;
         cursor: pointer;
+        position:relative;
+        left:45%;
+        top:20px;
     }
 }

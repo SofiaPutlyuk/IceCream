@@ -10,6 +10,9 @@ const PORT = 5000
 app.use(cors({
     origin: 'http://localhost:5173' 
 }));
+app.get("/test", (req, res) => {
+    res.send("OK");
+});
 app.use("/registration",Registrationrouter)
 app.use("/login",loginRouter)
 app.listen(PORT, () => {
