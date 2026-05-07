@@ -1,0 +1,127 @@
+
+@import "../../../scss/variables/utils/variables";
+.AboutUSBlock{
+    width: 100%;
+    height: 467px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(168deg, #efd7ef 8%, #f5f9fc 40%, #f8eae1 66%, #eaf8f9 91%);
+    opacity: 0.65;
+    &_title{
+        color: #0F0200;
+        font-family: "Berkshire Swash", serif;
+        font-weight: 400;
+        font-size: 80px;
+
+    }
+    &_navBlock{
+        width: 231px;
+        height: 52px;
+        display: flex;
+        background: #fff;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 73px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 35px;
+        &_subTitle{
+            color: #000;
+            font-family: "Archivo", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+}
+.subscribtionBlock{
+    width: 100%;
+    height: 651px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_container{
+        width: 1140px;
+        height: 357px;
+        background: url("../../../../public/assets/backgroundSubscribtionBlock.png");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_name{
+            color: #0F0200;
+            font-family: "Berkshire Swash", serif;
+            font-weight: 400;
+            font-size: 60px;
+            width: 711px;
+            margin-top: 0;
+            line-height: 107%;
+        }
+        &_bonus{
+            color: $greyLightColor;
+            font-family: "Archivo", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            margin: 0;
+        }
+        &_searchContainer{
+            width: 730px;
+            height: 62px;
+            margin-top: 55px;
+            display: flex;
+            &_input{
+                width: 520px;
+                height: 60px;
+                background: $whiteColor;
+                box-shadow: 0 2px 73px 2px rgba(0, 0, 0, 0.05);
+                border-radius: 30px;
+                border: none;
+                padding-left: 27px;
+            }
+            &_button{
+                border-radius: 30px;
+                width: 200px;
+                height: 62px;
+                background: $pinkColor;
+                color: $whiteColor;
+                border: none;
+                font-family: "Archivo", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                column-gap: 20px;
+                &_arrowIcon{
+                    margin-left: 20px;
+                    width: 11px;
+                    height: 13px;
+                }
+            }
+        }
+        &_confirmPoliticalyBlck{
+            display: flex;
+            width: 200px;
+            height: 20px;
+            margin-top: 37px;
+            align-items: center;
+            &_input{
+                width: 20px;
+                height: 20px;
+            }
+            &_confirmText{
+                color: $greyLightColor;
+                font-family: "Archivo", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                &_span{
+                    color: $pinkColor;
+                }
+            }
+        }
+    }
+}
+.active{
+    color: $pinkColor;
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.subscribtionSpan{
+    color: $pinkColor;
+}

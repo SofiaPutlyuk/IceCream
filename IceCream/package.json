@@ -30,6 +30,7 @@
     "redux-persist": "^6.0.0",
     "sass": "^1.97.3",
     "scss": "^0.2.4",
+    "swiper": "^12.1.4",
     "toastify": "^2.0.1"
   },
   "devDependencies": {

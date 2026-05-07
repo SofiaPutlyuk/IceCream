@@ -1,0 +1,52 @@
+.missionSection{
+    background: url('../../../../../public/assets/MissionImg.png');
+    max-width: 1920px;
+    height: 723px;
+    display: flex;
+    justify-content: flex-end;
+    column-gap : 73px;
+    align-items: center;
+    &_imgContainer{
+        width: 921px;
+        height: 723px;
+        background: hotpink
+    }
+    &_textContainer{
+        width: 520px;
+        height: 396px;
+        display: flex;
+        flex-direction: column;
+        &_title{
+            font-family: "Berkshire Swash", serif;
+            font-weight: 400;
+            font-size: 60px;
+            margin: 0;
+            line-height: 107%;
+            text-align: start;
+        }
+        &_subTitle{
+            font-family: "Archivo", serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
+            color: #fff;
+            text-align: start;
+        }
+        &_readMoreBtn{
+            border-radius: 30px;
+            width: 192px;
+            height: 62px;
+            box-shadow: 0 3px 22px 3px rgba(248, 61, 142, 0.13);
+            background: #f83d8e;
+            font-family: "Archivo", serif;
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            &_arrowIcon{
+                margin-left: 18px;
+                width: 11px;
+                height: 13px;
+            }
+        }
+    }
+}
