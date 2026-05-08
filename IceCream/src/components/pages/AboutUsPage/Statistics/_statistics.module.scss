@@ -1,0 +1,74 @@
+@import "../../../../scss/variables/utils/variables";
+.statisticSection{
+    height: 630px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_container{
+        width: 1140px;
+        height: 340px;
+        &_titleSection{
+            font-family: "Berkshire Swash", serif;
+            font-weight: 400;
+            font-size: 60px;
+            color: $blackColor;
+            margin: 0;
+        }
+        &_subTitleSection{
+            font-family: "Archivo", serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: $greyColor;
+            margin-top: 0;
+        }
+        &_statisticContainer{
+            border-bottom: 2px solid #f83d8e;
+            border-radius: 15px;
+            width: 255px;
+            height: 182px;
+            background: $whiteColor;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 12px 105px 12px rgba(0, 0, 0, 0.03);
+            &_value{
+                font-family: "Berkshire Swash", serif;
+                font-weight: 400;
+                font-size: 44px;
+                display: flex;
+                align-items: center;
+                column-gap: 3px;
+                margin: 0;
+                color: $blackColor;
+            }
+            &_statisticLabel{
+                font-family: "Archivo", serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: $greyLightColor;
+            }
+        }
+        &_valuesContainer{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+.statisticsSpan{
+    color: $pinkColor;
+}
+
+.statisticSpan{
+    font-family: "Archivo", serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #f83d8e;
+    display: block;
+    width: 15;
+    height: 24px;
+    line-height: 100%;
+
+}

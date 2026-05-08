@@ -1,5 +1,5 @@
 import { createSlice, isAction } from "@reduxjs/toolkit";
-import loginThunk from "../thunks/loginThunk";
+import loginThunk from "../getAllTeam/loginThunk";
 
 const initialState = {
     firstName: "",

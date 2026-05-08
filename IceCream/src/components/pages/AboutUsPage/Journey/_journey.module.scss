@@ -1,0 +1,75 @@
+@import "../../../../scss/variables/utils/variables";
+
+.journey{
+    max-width: 1920px;
+    height: 886px;
+    background-image: url("../../../../../public/assets/backgroundAboutUs.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    &_container{
+        width: 1256px;
+        height: 590px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_cicleImg{
+            width: 590px;
+            height: 590px;
+            border-radius: 50%;
+            background-image: url("../../../../../public/assets/img.png");
+        }
+        &_textContainer{
+            width: 565px;
+            height: 506px;
+            display: flex;
+            flex-direction: column;
+
+            &_journeyTitle{
+                font-family: "Berkshire Swash", serif;
+                font-weight: 400;
+                font-size: 60px;
+                text-align: start;
+                line-height: 107%;
+                color: black;
+                margin: 0;
+
+            }
+            &_journeyDescription{
+                width: 555px;
+                font-weight: 400;
+                font-size: 20px;
+                font-family: "Archivo", serif;
+                color: #646464;
+                text-align: start;
+                line-height: 160%;
+
+            }
+            &_readMoreBtn{
+                border-radius: 30px;
+                width: 192px;
+                height: 62px;
+                box-shadow: 0 3px 22px 3px rgba(248, 61, 142, 0.31);
+                background: #f83d8e;
+                border: none;
+                row-gap: 18px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 100%;
+                text-align: center;
+                color: #fff;
+                &_arrowIcon{
+                    margin-left: 18px;
+                    width: 11px;
+                    height: 13px;
+                }
+            }
+        }
+    }
+}
+.journeySpan{
+    color: $pinkColor;
+}
