@@ -38,7 +38,7 @@ const MembersSection = () => {
           <img className={style.membersSection_sliderContainer_sliderCard_imgContainer_img} src={Sophia} alt="" />
           </div>
           <h1 className={style.membersSection_sliderContainer_sliderCard_name}>Sophya Pytlyuk</h1>
-          <p className={style.membersSection_sliderContainer_sliderCard_position}>Team lead</p>
+          <p className={style.membersSection_sliderContainer_sliderCard_position}>Team Lead / developer</p>
           <div className={style.membersSection_sliderContainer_sliderCard_socialMediaContainer}>
             <div className={style.membersSection_sliderContainer_sliderCard_socialMediaContainer_socialMediaCircle}>
               <img src={facebook} alt="" />

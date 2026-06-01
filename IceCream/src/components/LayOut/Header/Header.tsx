@@ -46,8 +46,14 @@ const Header = () => {
               <div className={style.header_Container_rightContainer_navigatePanel_list_pagesContainer} onClick={togglePagesList}>
               <li className={`${style.header_Container_rightContainer_navigatePanel_list_item} ${style.pagesLink}`} style={{color: pagesList ? '#F83D8E' : '#0F0200'}} >Pages <img src={row} alt="rowNav" /></li>
                 <ul className={style.pagesList} style={{display: pagesList ? "block" : "none"}}>
-                  <li className={style.pagesList_Item}>Vegan</li>
-                  <li className={style.pagesList_Item}>Artisan</li>
+                  <li className={style.pagesList_Item} onClick={() => redirectOnPage("/team")} >Our Team</li>
+                  <li className={style.pagesList_Item}>Shop Layout</li>
+                  <li className={style.pagesList_Item}>Single Product Layout</li>
+                  <li className={style.pagesList_Item}>Shopping Cart</li>
+                  <li className={style.pagesList_Item}>Checkout</li>
+                  <li className={style.pagesList_Item}>Special Offers</li>
+                  <li className={style.pagesList_Item}>Privacy Policy</li>
+                  <li className={style.pagesList_Item}>Terms & Conditions</li>
                 </ul> 
               </div>
               <li>
