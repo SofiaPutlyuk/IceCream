@@ -148,6 +148,7 @@
     border-radius: 10px;
     top: 113px;
     padding: 0;
+    z-index: 10000  ;
     &_Item{
         display: flex;
         align-items: center;
@@ -170,7 +171,7 @@
 }
 .pagesList{
     position: relative;
-    height: 72px;
+    min-height: 72px;
     width: 212px;
     list-style: none;
     padding: 0;
@@ -178,10 +179,11 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    z-index: 10000;
     &_Item{
         display: flex;
         align-items: center;
-        height: 36px;
+        min-height: 36px;
         max-width: 100%;
         cursor: pointer;
         padding-left: 20px;
