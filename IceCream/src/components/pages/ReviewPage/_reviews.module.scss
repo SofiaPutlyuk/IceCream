@@ -1,0 +1,145 @@
+@import "../../../scss/variables/utils/variables";
+
+.reviewsHeader{
+    width: 100%;
+    height: 467px;
+    background: linear-gradient(168deg, #efd7ef 8%, #f5f9fc 40%, #f8eae1 66%, #eaf8f9 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &_title{
+        color: $blackColor;
+        font-family: "Berkshire Swash", serif;
+        font-weight: 400;
+        font-size: 80px;
+    }
+    &_navigationContainer{
+        border-radius: 35px;
+        width: 215px;
+        height: 52px;
+        background: $whiteColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_text{
+            font-family:"Archivo" ;
+            font-weight: 400;
+            font-size: 18px;
+            color: $blackColor;
+        }
+    }
+}
+.reviewsSpan{
+    color: $pinkColor;
+}
+.reviewContainer{
+    max-width: 1140px;
+    height: 690px;
+    margin: 0 auto;
+    background: tomato;
+    margin-top: 154px;
+    margin-bottom: 152px;
+    &_title{
+        font-family: "Berkshire Swash", serif;
+        font-weight: 400;
+        font-size: 60px;
+        color: $blackColor;
+        line-height: 107%;
+        flex-wrap: wrap;
+        width: 740px;
+        margin: 0 auto;
+    }
+    &_subTitle{
+        font-family:"Archivo" ;
+        font-weight: 400;
+        font-size: 20px;
+        color: $greyLightColor;
+    }
+    &_reviewContent{
+        width: 100%;
+        height: 466px;
+        &_addReviewBtn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 168px;
+            height: 52px;
+            background: $pinkColor;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 3px 22px 3px rgba(248, 61, 142, 0.31);
+            cursor: pointer;
+            font-family:"Archivo" ;
+            font-weight: bold;
+            font-size: 16px;
+            column-gap: 20px;
+        }
+        &_comment{
+            border-bottom: 2px solid #f83d8e;
+            border-radius: 20px;
+            max-width: 350px;
+            height: 343px;
+            background-image: url("../../../../public/assets/BackgroundCard.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 101px;
+            text-align: start;
+            padding-bottom: 51px;
+            &_container{
+                width: 283px;
+                height: 191px;
+                background: gold;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;;
+                &_text{
+                    font-family:"Archivo" ;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $greyLightColor;
+                    margin: 0;
+                }
+                &_authorContainer{
+                    width: 180px;
+                    height: 86px;
+                    background: rgb(167, 240, 140);
+                    display: flex;
+                    justify-content: space-between;
+                    &_authorCircle{
+                        width: 54px;
+                        height: 54px;
+                        background: gold;
+                        border-radius: 50%;
+                    }
+                    &_textContainer{
+                        width: 96px;
+                        height: 74px;
+                        background: #004d0f;
+                        &_name{
+                            font-family:"Archivo" ;
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: #f83d8e;
+                            line-height: 133%;
+                            margin: 0;
+                        }
+                        &_satisfaction{
+                            font-family:"Archivo" ;
+                            font-weight: 400;
+                            font-size: 14px;
+                            margin: 0;
+                        }
+                        &_rating{
+                            max-width: 81px;
+                            min-width: 13px;
+                            height: 24px;
+                            background: rgb(0, 187, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
