@@ -47,6 +47,7 @@ const Header = () => {
               <li className={`${style.header_Container_rightContainer_navigatePanel_list_item} ${style.pagesLink}`} style={{color: pagesList ? '#F83D8E' : '#0F0200'}} >Pages <img src={row} alt="rowNav" /></li>
                 <ul className={style.pagesList} style={{display: pagesList ? "block" : "none"}}>
                   <li className={style.pagesList_Item} onClick={() => redirectOnPage("/team")} >Our Team</li>
+                  <li className={style.pagesList_Item} onClick={() => redirectOnPage("/review")} >Review</li>
                   <li className={style.pagesList_Item}>Shop Layout</li>
                   <li className={style.pagesList_Item}>Single Product Layout</li>
                   <li className={style.pagesList_Item}>Shopping Cart</li>
