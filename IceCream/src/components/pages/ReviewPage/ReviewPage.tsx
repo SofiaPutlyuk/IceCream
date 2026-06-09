@@ -7,7 +7,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Serhii from '../../../../public/assets/Serhii.jpg'
 import { FaRegStar } from "react-icons/fa";
 import ReviewModal from './ReviewModal';
+import { useState } from 'react';
 const ReviewPage = () => {
+    const [openModal,setOpenModal] = useState(false)
+    const toggleOpenModal = () => {
+        setOpenModal(!openModal)
+    }
     return (
         <>
             <div className={style.reviewsHeader}>
@@ -92,8 +97,8 @@ const ReviewPage = () => {
                         </SwiperSlide>
 
                     </Swiper>
-                    <button className={style.reviewContainer_reviewContent_addReviewBtn}>Add review</button>
-                    <ReviewModal/>
+                    <button className={style.reviewContainer_reviewContent_addReviewBtn} onClick={() => toggleOpenModal()}>Add review</button>
+                    {openModal ? <ReviewModal closeModal= {toggleOpenModal} /> : null}
                 </div>
             </div>
         </>
