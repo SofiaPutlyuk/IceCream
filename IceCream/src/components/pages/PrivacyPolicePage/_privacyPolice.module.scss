@@ -1,0 +1,87 @@
+@import "../../../scss/variables/utils/variables";
+
+.headerPrivacy{
+    width: 100%;
+    height: 467px;
+    background: linear-gradient(168deg, #efd7ef 8%, #f5f9fc 40%, #f8eae1 66%, #eaf8f9 91%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &_namePage{
+        font-family: "Berkshire Swash", serif;
+        font-weight: 400;
+        font-size: 80px;
+        color: $blackColor;
+    }
+    &_navPanel{
+        width: 170px;
+        height: 52px;
+        background: $whiteColor;
+        border-radius: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_text{
+            font-family: "Archivo", serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: $blackColor;
+        }
+    }
+}
+.PrivacyContentContainer{
+    width: 1140px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 100px;
+    &_mainText{
+        font-family: "Archivo", serif;
+        font-weight: 600;
+        font-size: 30px;
+        color: $blackColor;
+        margin: 0;
+    }
+    &_subTitle{
+        font-family: "Archivo", serif;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 0;
+        color: $greyLightColor;
+    }
+
+    &_clauseContainer{
+        width: 1105px;
+        display: flex;
+        flex-direction: column;
+        row-gap : 20px;
+        &_article{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &_clause{
+                font-family: "Archivo", serif;
+                font-weight: bold;
+                font-size: 22px;
+                color: $blackColor;
+                margin: 0;
+            }
+            &_clauseText{
+                font-family: "Archivo", serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: $greyLightColor;
+                text-align: start;
+                margin: 0;
+                line-height: 150%;
+
+            }
+        }
+    }
+}
+.PrivacyNavSpan{
+    color: $pinkColor;
+}

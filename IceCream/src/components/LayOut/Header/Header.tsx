@@ -53,7 +53,7 @@ const Header = () => {
                   <li className={style.pagesList_Item}>Shopping Cart</li>
                   <li className={style.pagesList_Item}>Checkout</li>
                   <li className={style.pagesList_Item}>Special Offers</li>
-                  <li className={style.pagesList_Item}>Privacy Policy</li>
+                  <li className={style.pagesList_Item} onClick={() => redirectOnPage("/privacy")}>Privacy Policy</li>
                   <li className={style.pagesList_Item}>Terms & Conditions</li>
                 </ul> 
               </div>
