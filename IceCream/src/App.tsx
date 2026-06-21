@@ -21,6 +21,7 @@ import BlogPage from './components/pages/BlogPage/BlogPage'
 import MissionPage from './components/pages/MissionPage/MissionPage'
 import Login from './components/User/Login/Login'
 import Registration from './components/User/Registration/Registration'
+import PrivacyPolicePage from './components/pages/PrivacyPolicePage/PrivacyPolicePage'
 function App() {
   return (
       <Routes>
@@ -46,6 +47,7 @@ function App() {
           <Route path="thank" element={<ThankYouPage />} />
           <Route path='login' element={<Login/>}/>
           <Route path='register' element={<Registration/> }/>
+          <Route path='privacy' element={<PrivacyPolicePage/> }/>
         </Route>
       </Routes>
   )
