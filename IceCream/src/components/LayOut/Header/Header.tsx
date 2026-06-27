@@ -48,7 +48,7 @@ const Header = () => {
                 <ul className={style.pagesList} style={{display: pagesList ? "block" : "none"}}>
                   <li className={style.pagesList_Item} onClick={() => redirectOnPage("/team")} >Our Team</li>
                   <li className={style.pagesList_Item} onClick={() => redirectOnPage("/review")} >Review</li>
-                  <li className={style.pagesList_Item}>Shop Layout</li>
+                  <li className={style.pagesList_Item} onClick={() => redirectOnPage("iceCreams")}>Shop Layout</li>
                   <li className={style.pagesList_Item}>Single Product Layout</li>
                   <li className={style.pagesList_Item}>Shopping Cart</li>
                   <li className={style.pagesList_Item}>Checkout</li>
